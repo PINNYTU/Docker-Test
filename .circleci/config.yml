@@ -1,6 +1,6 @@
 version: 2
 jobs:
-	build:
+ build:
 		docker:
 			- image: circleci/node:8.11.1-stretch
 		working_directory: ~/repo
@@ -16,5 +16,5 @@ jobs:
 			- run:
 					name: "Build docker image and push to docker hub"
 					command:
-						docker build -t ima8/codemania111:latest .
-						docker push ima8/codemania111:latest
+						docker build -t natnapin/pinny .
+						docker push natnapin/pinny
